@@ -1,0 +1,142 @@
+Shared cache: disabled
+Workspace root: /home/model/caml/odd-bug
+Auto-detected concurrency: 16
+Running[0]: /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -config > /tmp/dune_4ccb1a_output
+Dune context:
+ { name = "default"
+ ; kind = "default"
+ ; profile = Dev
+ ; merlin = true
+ ; for_host = None
+ ; fdo_target_exe = None
+ ; build_dir = "default"
+ ; toplevel_path = Some External "/home/model/.opam/5.0.0+trunk/lib/toplevel"
+ ; ocaml_bin = External "/home/model/.opam/5.0.0+trunk/bin"
+ ; ocaml = Ok External "/home/model/.opam/5.0.0+trunk/bin/ocaml"
+ ; ocamlc = External "/home/model/.opam/5.0.0+trunk/bin/ocamlc.opt"
+ ; ocamlopt = Ok External "/home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt"
+ ; ocamldep = Ok External "/home/model/.opam/5.0.0+trunk/bin/ocamldep.opt"
+ ; ocamlmklib =
+     Ok External "/home/model/.opam/5.0.0+trunk/bin/ocamlmklib.opt"
+ ; env =
+     map
+       { "DUNE_OCAML_HARDCODED" :
+           "/home/model/.opam/5.0.0+trunk/lib/ocaml:/home/model/.opam/5.0.0+trunk/lib"
+       ; "DUNE_OCAML_STDLIB" : "/home/model/.opam/5.0.0+trunk/lib/ocaml"
+       ; "DUNE_SOURCEROOT" : "/home/model/caml/odd-bug"
+       ; "INSIDE_DUNE" : "/home/model/caml/odd-bug/_build/default"
+       ; "OCAMLFIND_IGNORE_DUPS_IN" :
+           "/home/model/caml/odd-bug/_build/install/default/lib"
+       ; "OCAMLPATH" : "/home/model/caml/odd-bug/_build/install/default/lib"
+       ; "OCAMLTOP_INCLUDE_PATH" :
+           "/home/model/caml/odd-bug/_build/install/default/lib/toplevel"
+       }
+ ; findlib_paths =
+     [ External "/home/model/.opam/5.0.0+trunk/lib/ocaml"
+     ; External "/home/model/.opam/5.0.0+trunk/lib"
+     ]
+ ; arch_sixtyfour = true
+ ; natdynlink_supported = true
+ ; supports_shared_libraries = true
+ ; ocaml_config =
+     { version = "5.0.0+dev6-2022-07-21"
+     ; standard_library_default = "/home/model/.opam/5.0.0+trunk/lib/ocaml"
+     ; standard_library = "/home/model/.opam/5.0.0+trunk/lib/ocaml"
+     ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+     ; ccomp_type = "cc"
+     ; c_compiler = "gcc"
+     ; ocamlc_cflags =
+         [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+     ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+     ; ocamlopt_cflags =
+         [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+     ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+     ; bytecomp_c_compiler =
+         [ "gcc"
+         ; "-O2"
+         ; "-fno-strict-aliasing"
+         ; "-fwrapv"
+         ; "-pthread"
+         ; "-fPIC"
+         ; "-D_FILE_OFFSET_BITS=64"
+         ]
+     ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+     ; native_c_compiler =
+         [ "gcc"
+         ; "-O2"
+         ; "-fno-strict-aliasing"
+         ; "-fwrapv"
+         ; "-pthread"
+         ; "-fPIC"
+         ; "-D_FILE_OFFSET_BITS=64"
+         ]
+     ; native_c_libraries = [ "-lm"; "-lpthread" ]
+     ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+     ; cc_profile = []
+     ; architecture = "amd64"
+     ; model = "default"
+     ; int_size = 63
+     ; word_size = 64
+     ; system = "linux"
+     ; asm = [ "as" ]
+     ; asm_cfi_supported = true
+     ; with_frame_pointers = false
+     ; ext_exe = ""
+     ; ext_obj = ".o"
+     ; ext_asm = ".s"
+     ; ext_lib = ".a"
+     ; ext_dll = ".so"
+     ; os_type = "Unix"
+     ; default_executable_name = "a.out"
+     ; systhread_supported = true
+     ; host = "x86_64-pc-linux-gnu"
+     ; target = "x86_64-pc-linux-gnu"
+     ; profiling = false
+     ; flambda = false
+     ; spacetime = false
+     ; safe_string = true
+     ; exec_magic_number = "Caml1999X032"
+     ; cmi_magic_number = "Caml1999I032"
+     ; cmo_magic_number = "Caml1999O032"
+     ; cma_magic_number = "Caml1999A032"
+     ; cmx_magic_number = "Caml1999Y032"
+     ; cmxa_magic_number = "Caml1999Z032"
+     ; ast_impl_magic_number = "Caml1999M032"
+     ; ast_intf_magic_number = "Caml1999N032"
+     ; cmxs_magic_number = "Caml1999D032"
+     ; cmt_magic_number = "Caml1999T032"
+     ; natdynlink_supported = true
+     ; supports_shared_libraries = true
+     ; windows_unicode = false
+     }
+ }
+Actual targets:
+- alias @@default
+Running[1]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -impl a/test.ml) > _build/default/a/.test.eobjs/test.ml.d
+Running[2]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -impl a/test2.ml) > _build/default/a/.test.eobjs/test2.ml.d
+Running[3]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.lib.objs/byte -no-alias-deps -opaque -o lib/.lib.objs/byte/lib__.cmo -c -impl lib/lib__.ml-gen)
+Running[4]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -impl lib/queue.ml) > _build/default/lib/.lib.objs/queue.ml.d
+Running[5]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -impl a/queue.ml) > _build/default/a/.test.eobjs/queue.ml.d
+Running[6]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -impl lib/lib.ml) > _build/default/lib/.lib.objs/lib.ml.d
+Running[7]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I a/.test.eobjs/byte -no-alias-deps -opaque -o a/.test.eobjs/byte/dune__exe.cmo -c -impl a/.test.eobjs/dune__exe.ml-gen)
+Running[8]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -intf lib/lib.mli) > _build/default/lib/.lib.objs/lib.mli.d
+Running[9]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamldep.opt -modules -intf lib/queue.mli) > _build/default/lib/.lib.objs/queue.mli.d
+Running[10]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.lib.objs/native/lib__.cmx -c -impl lib/lib__.ml-gen)
+Running[11]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I a/.test.eobjs/byte -I a/.test.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o a/.test.eobjs/native/dune__exe.cmx -c -impl a/.test.eobjs/dune__exe.ml-gen)
+Running[12]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.lib.objs/byte -no-alias-deps -opaque -open Lib__ -o lib/.lib.objs/byte/lib__Queue.cmi -c -intf lib/queue.mli)
+Running[13]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lib__ -o lib/.lib.objs/native/lib__Queue.cmx -c -impl lib/queue.ml)
+Running[14]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.lib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Lib__ -o lib/.lib.objs/byte/lib__Queue.cmo -c -impl lib/queue.ml)
+Running[15]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.lib.objs/byte -no-alias-deps -opaque -open Lib__ -o lib/.lib.objs/byte/lib.cmi -c -intf lib/lib.mli)
+Running[16]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lib__ -o lib/.lib.objs/native/lib.cmx -c -impl lib/lib.ml)
+Running[17]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.lib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Lib__ -o lib/.lib.objs/byte/lib.cmo -c -impl lib/lib.ml)
+Running[18]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I a/.test.eobjs/byte -I lib/.lib.objs/byte -no-alias-deps -opaque -open Dune__exe -o a/.test.eobjs/byte/dune__exe__Test2.cmo -c -impl a/test2.ml)
+Running[19]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I a/.test.eobjs/byte -I lib/.lib.objs/byte -no-alias-deps -opaque -open Dune__exe -o a/.test.eobjs/byte/dune__exe__Queue.cmo -c -impl a/queue.ml)
+Running[20]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/lib.cma lib/.lib.objs/byte/lib__.cmo lib/.lib.objs/byte/lib__Queue.cmo lib/.lib.objs/byte/lib.cmo)
+Running[21]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I a/.test.eobjs/byte -I a/.test.eobjs/native -I lib/.lib.objs/byte -I lib/.lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o a/.test.eobjs/native/dune__exe__Queue.cmx -c -impl a/queue.ml)
+Running[22]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I a/.test.eobjs/byte -I lib/.lib.objs/byte -no-alias-deps -opaque -open Dune__exe -o a/.test.eobjs/byte/dune__exe__Test.cmo -c -impl a/test.ml)
+Running[23]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I a/.test.eobjs/byte -I a/.test.eobjs/native -I lib/.lib.objs/byte -I lib/.lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o a/.test.eobjs/native/dune__exe__Test2.cmx -c -impl a/test2.ml)
+Running[24]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/lib.cmxa lib/.lib.objs/native/lib__.cmx lib/.lib.objs/native/lib__Queue.cmx lib/.lib.objs/native/lib.cmx)
+Running[25]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I a/.test.eobjs/byte -I a/.test.eobjs/native -I lib/.lib.objs/byte -I lib/.lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o a/.test.eobjs/native/dune__exe__Test.cmx -c -impl a/test.ml)
+Running[26]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o a/test.exe lib/lib.cmxa a/.test.eobjs/native/dune__exe.cmx a/.test.eobjs/native/dune__exe__Queue.cmx a/.test.eobjs/native/dune__exe__Test.cmx)
+Running[27]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o a/test2.exe lib/lib.cmxa a/.test.eobjs/native/dune__exe.cmx a/.test.eobjs/native/dune__exe__Test2.cmx)
+Running[28]: (cd _build/default && /home/model/.opam/5.0.0+trunk/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/lib.cmxs lib/lib.cmxa)
