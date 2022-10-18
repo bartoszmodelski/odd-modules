@@ -2,10 +2,10 @@ At a glance executables generated for [test.ml](a/test.ml) and [test2.ml](a/test
 
 
 ```ocaml                                                                                                                                         
-(base) ➜  odd-bug git:(main) ✗ dune build && ./_build/default/a/test2.exe
+✗ dune build && ./_build/default/a/test2.exe
 bar%  
 
-(base) ➜  odd-bug git:(main) ✗ dune build && ./_build/default/a/test.exe
+✗ dune build && ./_build/default/a/test.exe
 foobar%                                        
 ```
 
