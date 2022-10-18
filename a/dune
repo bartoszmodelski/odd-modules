@@ -1,0 +1,3 @@
+(executables
+  (names test test2)
+  (libraries lib))
