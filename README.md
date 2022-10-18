@@ -1,4 +1,4 @@
-At a glance executables generated for [test.ml](a/test.ml) and [test2.ml](a/test2.ml) should work the same. But it does not seem to be the case: 
+At a glance executables generated for [test.ml](a/test.ml) and [test2.ml](a/test2.ml) should work the same. The only difference is the way [lib/queue.ml] is referenced. But it does not seem to be the case: 
 
 
 ```ocaml                                                                                                                                         
