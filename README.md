@@ -10,3 +10,9 @@ foobar%
 ```
 
 So, in both cases we expect [lib/queue.ml](lib/queue.ml) to be linked. However, for the second output, [a/queue.ml](a/queue.ml) was also executed.
+
+Tried the following switches: 
+* 5.1, dune 3.0
+* 5.0, dune 3.0 
+* 4.13.1, dune 2.9
+* 4.13.1, dune 2.0
